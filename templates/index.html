@@ -1,0 +1,544 @@
+{% extends 'nav_footer.html'%}
+{%load static%}
+{% block title %}Home{% endblock %}
+
+
+{%block mcss-home-page%}
+
+
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>WELCOME to</h2>
+      <h3>Monrovia Consolidated School System
+      </h3>
+    </div>
+  <div class="row" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-lg-12 d-flex justify-content-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-card">Card</li>
+          <li data-filter=".filter-web">Web</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="{% static 'assets/img/Schools/Tubman.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Tubman High School </h4>
+            <p>12<sup>th</sup>Street,</p>
+            <div class="portfolio-links">
+            <a href="{% url 'index'%}" title="Click"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="assets/img/Schools/Abedu-Bentsi.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Abedi Bentsi</h4>
+            <p>Logan Town</p>
+            <div class="portfolio-links">
+            <a href="{% url 'index' %}" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="assets/img/Schools/A-Glenn.jpg" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>A Glenn Tubman</h4>
+            <p>12<sup>th</sup>Street, Sinkor</p>
+            <div class="portfolio-links">
+            <a href="{%url 'index'%}" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img src="{%static 'assets/img/Schools/C.W-Brumskin.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>G.W. Gibson</h4>
+            <p>Capitol Bye Pass</p>
+            <div class="portfolio-links">
+            <a href="{%url 'index'%}" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="{% static 'assets/img/Schools/Monrovia.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Monrovia Demonstration School</h4>
+            <p>Lynn Street</p>
+            <div class="portfolio-links">
+            <a href="{%url 'index'%}" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+        <div class="portfolio-wrap">
+          <img src="{% static 'assets/img/Schools/Boatswain.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Boatswain Junior High School</h4>
+            <p></p>
+            <div class="portfolio-links">
+            <a href="{%url 'index'%}" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img src="{% static 'assets/img/Schools/A-Glenn.jpg' }" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>A Glenn Tubman High</h4>
+            <p>12<sup>th</sup>Street</p>
+            <div class="portfolio-links">
+            <a href="{url 'index'}" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+        <div class="portfolio-wrap">
+          <img src="{%static 'assets/img/Schools/Gaye.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>Gaye Town Elem. & Jr High</h4>
+            <p>Old Road Gaye Twon</p>
+            <div class="portfolio-links">
+            <a href="{%url 'index'%}" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+        <div class="portfolio-wrap">
+          <img src="{% static 'assets/img/Schools/Abedu-Bentsi.jpg' %}" class="img-fluid" alt="">
+          <div class="portfolio-info">
+            <h4>G.W Gibson 2</h4>
+            <p>Capitol Bye Pass</p>
+            <div class="portfolio-links">
+            <a href="{%url 'index'%}" title="Click"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!--End Portfolio Section -->
+
+<!-- ======= Counts Section ======= -->
+<section id="counts" class="counts section-bg">
+  <div class="container">
+
+    <div class="row justify-content-end">
+
+      <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="2" class="purecounter"></span>
+          <p>Twenty Four Schools</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <span data-purecounter-start="0" data-purecounter-end="25000" data-purecounter-duration="2" class="purecounter"></span>
+          <p>Students for Academic 2022/2023</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <span data-purecounter-start="0" data-purecounter-end="59" data-purecounter-duration="2" class="purecounter"></span>
+          <p>Fifty Nine Years of National Service</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-5 col-6 d-md-flex align-items-md-stretch">
+        <div class="count-box">
+          <span data-purecounter-start="0" data-purecounter-end="40000" data-purecounter-duration="2" class="purecounter"></span>
+          <p>Over Forty Thousand Alumina</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Counts Section -->
+
+
+<!-- ======= Team Section ======= -->
+<section id="team" class="team section-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Senior Management Team</h2>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+        <div class="member">
+          <div class="member-img">
+            <img src="{% static 'assets/img/staffs/zawolo.jpg'%}" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Isaac Saye-Lakpor Zawolo</h4>
+            <span>Superintendent</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="member">
+          <div class="member-img">
+            <img src="{% static 'assets/img/staffs/harrietta.jpg'%}" class="img-fluid" alt="">
+            <div class="social">
+              <a href="https://twitter.com/izawolo"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/isaac.zawolo"><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/isaac-zawolo-02927012"><i class="bi bi-linkedin"></i></a>
+      
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Coming Soon</h4>
+            <span>Asst. Superintdent</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+        <div class="member">
+          <div class="member-img">
+            <img src="{% static 'assets/img/staffs/harrietta.png'%}" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Harrietta Gblorso</h4>
+            <span>Director for Administration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+        <div class="member">
+          <div class="member-img">
+            <img src="{% static 'assets/img/staffs/felecia.png'%}" class="img-fluid" alt="">
+            <div class="social">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="member-info">
+            <h4>Felecia P. Wollor</h4>
+            <span>Comptroller</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Team Section -->
+
+<!-- ======= School Fees Section ======= -->
+<section id="pricing" class="pricing">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Tuition Fees</h2>
+      <p></p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6" data-aos="zoom-im" data-aos-delay="100">
+        <div class="box">
+          <h3>ECD</h3>
+          <h4><sup>$</sup>0<span> / Yearly</span></h4>
+        
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Tuition Free</a>
+          </div>
+        </div>
+      </div><!--ECD End here-->
+
+      <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100"><!--Start here-->
+        <div class="box">
+          <h3>Elementary</h3>
+          <h4>L$1900<span> / Yearly</span></h4>
+    
+          
+        
+          <div class="btn-wrap">
+          <a href="#" class="btn-buy">Registration Fees</a>
+          </div>
+        </div>
+      </div><!--End Elementary here-->
+
+      
+
+      <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
+        <div class="box featured">
+          <h3>Junior High</h3>
+          <h4><sup>$</sup>LD1900<span> / Yearly</span></h4>
+          
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Registration Fees</a>
+          </div>
+        </div>
+      </div><!--Junior High End here-->
+
+      <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="100">
+        <div class="box">
+          <h3>Senior High</h3>
+          <h4>L$1900<span> / Yearly</span></h4>
+    
+          
+        
+          <div class="btn-wrap">
+          <a href="#" class="btn-buy">Registration Fees</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!--End of Registration Section -->
+
+
+<section id="hero" class="d-flex align-items-center">
+  <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+    <div class="row justify-content-center">
+      <div class="col-xl-7 col-lg-9 text-center">
+  
+        <h2>The Superindent Five Strategies Goals</h2>
+      </div>
+    </div>
+
+    <div class="row icon-boxes">
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+        <div class="icon-box">
+        
+          <div class="icon"><i class="bi bi-pen text-xl text-dark2"></i></div>
+          <h4 class="title"><a href="">Academic Excellence</a></h4>
+          <h4 class="description">1.Students should learn for growth</h4>
+          <h4 class="description">2.Students should learn time management skills</h4>
+          <h4 class="description">3.Students should get involved in community activities</h4>
+          <h4 class="description">4.Students should utilize resources</h4>
+          <h4 class="description">5.Students should prioritize their health</h4>
+          <h4 class="description">6.Students should create their own list of success tips</h4>
+
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+        <div class="icon-box">
+          
+          <div class="icon"><i class="bi bi-book text-xl text-dark2"></i></div>
+          <h4 class="title">Safe, secure, and Enticing Learning Environment</h4>
+          <h4 class="description">1.Teachers should arrange their classroom for effective and enticing learning</h4>
+          <h4 class="description">2.Teachers should Layout their classroom for student comfort</h4>
+          <h4 class="description">3.Teachers should provide the space for student perspective</h4>
+          <h4 class="description">4.Teachers should create an effective learning environment</h4>
+          <h4 class="description">5.Students should prioritize their health</h4>
+          <h4 class="description">6.Students should create their own list of success tips</h4>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+        <div class="icon-box">
+          <div class="icon"> <i class="bi bi-building text-xl text-dark2"></i></div>
+          <h4 class="title">School-Corporate-Community Partnership</h4>
+          <h4 class="description">1.The CSR of corporate partners should align with the initiatives of Superintdent</h4>
+          <h4 class="description">2.Corporate partners should enhance their image with our schools and students by engaging in social program</h4>
+          <h4 class="description">3.Corporate partners' CSR should determine their role they would play</h4>
+          <h4 class="description">4.Students should get involved in community activities</h4>
+          <h4 class="description">5.Corporate partners should be able to provide internships to some of our graduating students</h4>
+
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
+        <div class="icon-box">
+          <div class="icon"><i class="bi bi-people text-xl text-dark2"></i></div>
+          <h4 class="title"><a href="">Organization Efficiency </a></h4>
+          <p class="description">The System would realign, reconfigure, and transform in order to meet future challenges for success</p>
+
+          <h4 class="description">1.MCSS should conform to new technological and systematic advances</h4>
+          <h4 class="description">2.The System should be technologically integrated to be efficient and productive</h4>
+          <h4 class="description">3.The System should utilize time effectively</h4>
+          <h4 class="description">4.The System should identify appropriate resources</h4>
+          <h4 class="description">5.The System should analyze costs</h4>
+          <h4 class="description">6.The System should be fast tracked to a 21stcentury in eery aspect of operations</h4>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+
+  
+  <!-- ======= About Superintendent Zawolo Section ======= -->
+  <section id="about-video" class="about-video">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-4 video-box align-self-baseline" data-aos="fade-right" data-aos-delay="100">
+          <img src="{% static 'assets/img/staffs/zawolo.jpg' %}" class="img-fluid" alt="">
+          <h5>Hon. Isaac Saye-Lakpor Zawolo</h5>
+          <h4>About our Superintendent</h4>
+         </div>
+
+        <div class="col-lg-8 pt-3 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+          
+          <p class="fst-italic">
+          Isaac Saye-Lakpoh Zawolo is the seventeenth Superintendent of the MCSS. He was appointed to the position of Superintendent on November 23, 2021, by H.E. Dr. George M. Weah. Professor Zawolo is an educator, an emancipator, a humanitarian, an engineer, a mathematician, an administrator, and a reformist. He brings to the MCSS over thirty-five years of experience as a teacher and administrator.
+          He was educated at several primary and secondary schools in Liberia before earning a bachelor’s of Science degree in Mathematics and Physics from the University of Liberia in 1987. He also holds both Bachelor of Science and Master of Science degrees in Civil Engineering. Additionally, Superintendent Zawolo has completed all coursework for a master of secondary education in mathematics.
+          Professor Zawolo began his teaching career at the St. Mark's United Methodist Junior High School in Kakata, Margibi County. He later taught at the Paynesville Community Night School and the University of Liberia in Monrovia, Liberia. He established and served as Coordinator of the Advanced Professional Technical Institute, APTI, in Danane, La Cote D’Ivoire in 1996 - 1998. Before he was appointed Superintendent, Professor Zawolo served as Chairman of the Department of Mathematics at the Arlington Career Center in Arlington, Virginia in the United States of America. He relinquished the position to focus on the management of two schools he established in Liberia. He, until recently, served as an adjunct professor of Mathematics at the Alexandria campus of the Northern Virginia Community College. Professor Zawolo also once served as an Adjunct Professor of Mathematics at Montgomery College in Rockville, Maryland the United States of America.
+          In 2015, Superintendent Zawolo organized the Foundation for Equity and Excellence in Education in Liberia, FEEL, Inc. FEEL is involved with supporting instructional improvement in Liberia. FEEL Inc. also supports female education.
+          </p>
+          
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End About Video Section -->
+
+  
+
+  <!-- ======= Testimonials Section ======= -->
+  <section id="testimonials" class="testimonials">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>MCSS SCHOOLS VALEDICTORIAN COMING SOON!</h2>
+        <p> </p>
+      </div>
+
+      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                William V.S. Tubman High School 2022/2023 Valedictoria
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/" class="testimonial-img" alt="">
+              <!-- <h3>Patrick Pwee</h3>
+              <h4>Valedictorian</h4> -->
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Pipeline Community High School 2022/2023 Valedictoria
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/" class="testimonial-img" alt="">
+              <!-- <h3>Patrick Pwee</h3>
+              <h4>Valedictorian</h4> -->
+            </div>
+          </div><!-- End testimonial item -->
+
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                D Twe Memorial High School 2022/2023 Valedictoria
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="assets/img/" class="testimonial-img" alt="">
+              <!-- <h3>Patrick Pwee</h3>
+              <h4>Valedictorian</h4> -->
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                G.W. Gibson High School 2022/2023 Valedictoria
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{%static 'assets/img/testimonials/team-isaac-6.jpg' %}" class="testimonial-img" alt="">
+              <!-- <h3>Patrick Pwee</h3>
+              <h4>Valedictorian</h4> -->
+            </div>
+          </div><!-- End testimonial item -->
+
+
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                William V.S. Tubman High School 2022/2023 Valedictoria
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+              <img src="{%static 'assets/img/testimonials/team-isaac-6.jpg' %}" class="testimonial-img" alt="">
+              <!-- <h3>Patrick Pwee</h3>
+              <h4>Valedictorian</h4> -->
+            </div>
+          </div><!-- End testimonial item -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+  </section><!-- End Testimonials Section -->
+
+  
+
+{% endblock mcss-home-page %}
+    
+
+
+
+

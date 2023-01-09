@@ -1,0 +1,4 @@
+This project was build with python 3.9.2
+Clone this project this on your computer : git
+Change directory to: cd MCSS-WEBSITE
+Activate the virtualenv 'source venv/bin/activate
