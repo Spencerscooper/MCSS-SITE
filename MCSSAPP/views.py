@@ -1,30 +1,32 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Post, Senior_Management_Image
+
 
 
 # Create your views here.
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request,'MCSSAPP/index.html')
 
-def aboutmcss(request):
-    return render(request, 'aboutmcss.html')
+def about(request):
+    return render(request, 'MCSSAPP/about.html')
 
-def mcssadministration(request):
-    return render(request, 'mcssadministration.html')
+def administration(request):
+    return render(request, 'MCSSAPP/administration.html')
 
 def news(request):
-    return render(request, 'news.html')
+    news = Post.objects.all()
+    return render(request, 'MCSSAPP/news.html',{"news":news})
 
 
-def tubmanhigh(request):
+def newsdetails(request, pk):
+    news = Post.objects.get(request, pk=detail_page)
 
-    return render(request, 'schools/William-V.S.Tubman/tubmanhigh.html' )# This functions represents William V.S Tubman High
+    return render(request,'MCSSAPP/newsdetails.html')
 
-def tubman_admin(request):
 
-    return render(request, 'schools/William-V.S.Tubman/tubman_admin.html' )
-
-def Schedule(request):
-
-    return render(request, 'schools/William-V.S.Tubman/Schedule.html' )
+def seniormanagement(request, image_id):
+    seniormanagement = Senior_Management_Image.objects.all(pk=image_id)
+    if seniormanagement is not None:
+        return render(request, 'MCSSAPP/index.html', {'seniormanagementteam':seniormanagement})
